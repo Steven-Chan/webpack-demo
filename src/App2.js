@@ -8,13 +8,13 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Edit <code>src/App2.js</code> and save to reload.
         </p>
         <a
           className="App-link"
-          href="/app2"
+          href="/app"
         >
-          Switch to app2 (not work in dev server yet)
+          Switch to app (not work in dev server yet)
         </a>
         <a
           className="App-link"
@@ -22,7 +22,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Learn React - This string only appears in app2
         </a>
       </header>
     </div>
