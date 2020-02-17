@@ -21,8 +21,6 @@ const publicUrlOrPath = getPublicUrlOrPath(
   process.env.PUBLIC_URL
 );
 
-const appName = process.env.REACT_APP_ENTRY || 'app';
-
 const moduleFileExtensions = [
   'web.mjs',
   'mjs',
@@ -54,10 +52,11 @@ const resolveModule = (resolveFn, filePath) => {
 module.exports = {
   dotenv: resolveApp('.env'),
   appPath: resolveApp('.'),
-  appBuild: resolveApp(`build/${appName}`),
+  appBuild: resolveApp(`build`),
   appPublic: resolveApp('public'),
   appHtml: resolveApp('public/index.html'),
-  appIndexJs: resolveModule(resolveApp, `src/${appName}/index`),
+  appIndexJs: resolveModule(resolveApp, `src/app/index`),
+  app2IndexJs: resolveModule(resolveApp, `src/app2/index`),
   appPackageJson: resolveApp('package.json'),
   appSrc: resolveApp('src'),
   appTsConfig: resolveApp('tsconfig.json'),
